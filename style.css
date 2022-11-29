@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010101;
+}
+.parent {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+  padding: 12px;
+  overflow: hidden;
+  resize: horizontal;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.child {
+  height: 100%;
+  background-color: #4dc2c2;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  width: clamp(100px, 50%, 200px);
+}
